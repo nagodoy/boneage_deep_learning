@@ -92,7 +92,7 @@ def attn_model(img_dims, optim, metric):
     Builds & compiles attention mechanism model
     
     *Code adapted from:
-    - 'Attention on Pretrained-VGG16 for Bone Age' notebook (https://www.kaggle.com/kmader/attention-on-pretrained-vgg16-for-bone-age)
+    - 'Attention on Pretrained-VGG16 for Bone Age' notebook by K Scott Mader (https://www.kaggle.com/kmader/attention-on-pretrained-vgg16-for-bone-age)
     
     Parameters
     ----------
@@ -144,7 +144,7 @@ def attn_model(img_dims, optim, metric):
     # Global average pooling
     gap_features = GlobalAveragePooling2D()(mask_features)
     gap_mask = GlobalAveragePooling2D()(attn_layer)
-    gap_layer = Lambda(lambda x: x[0]/x[1])([gap_features, gap_mask])    # rescale after pooling
+    gap_layer = Lambda(lambda x: x[0]/x[1])([gap_features, gap_mask])    # Rescale layer after pooling
     gap_layer = Dropout(0.5)(gap_layer)
     gap_layer = Dense(512, activation = 'swish')(gap_layer)
     gap_layer = Dropout(0.2)(gap_layer)
@@ -208,8 +208,8 @@ def attn_sex_model(img_dims, optim, metric):
     Builds & compiles attention mechanism model
 
     *Code adapted from:
-    - 'Attention on Pretrained-VGG16 for Bone Age' notebook (https://www.kaggle.com/kmader/attention-on-pretrained-vgg16-for-bone-age)
-    - 'KU BDA 2019 boneage project' notebook (https://www.kaggle.com/ehrhorn2019/ku-bda-2019-boneage-project)
+    - 'Attention on Pretrained-VGG16 for Bone Age' notebook by K Scott Mader (https://www.kaggle.com/kmader/attention-on-pretrained-vgg16-for-bone-age)
+    - 'KU BDA 2019 boneage project' notebook by Mads Ehrhorn (https://www.kaggle.com/ehrhorn2019/ku-bda-2019-boneage-project)
     *Model architecture also inspired by: https://www.16bit.ai/blog/ml-and-future-of-radiology
     
     Parameters

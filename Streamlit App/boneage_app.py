@@ -59,6 +59,7 @@ def mae_months(y_true, y_pred):
 
 # Function for processing image
 def process_image(img, img_size=(299, 299)):
+    # Code adapted from https://medium.com/swlh/building-a-deep-learning-flower-classifier-cfdbd59f0210
     image = ImageOps.fit(img, img_size, Image.ANTIALIAS)
     image = np.asarray(image)
     img = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)

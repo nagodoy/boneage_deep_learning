@@ -169,6 +169,10 @@ def gen_img_sex_inputs(idg, df, path, batch_size, seed, shuffle, img_size):
     Generates batches of augmented data for 2 inputs: image, sex
     In order to map sex data to corresponding image, we need to augment the data together
     
+    *Code adapted from:
+    - 'KU BDA 2019 boneage project' notebook (https://www.kaggle.com/ehrhorn2019/ku-bda-2019-boneage-project)
+    *Model architecture also inspired by: https://www.16bit.ai/blog/ml-and-future-of-radiology
+    
     Parameters
     ----------
     df: pandas dataframe for corresponding dataset
@@ -194,7 +198,7 @@ def gen_img_sex_inputs(idg, df, path, batch_size, seed, shuffle, img_size):
         target_size = img_size,
         color_mode = 'rgb')
     
-    gen_gender = idg.flow_from_dataframe(
+    gen_sex = idg.flow_from_dataframe(
         dataframe = df,
         directory = path,
         x_col = 'filename', y_col = 'sex',
@@ -207,5 +211,5 @@ def gen_img_sex_inputs(idg, df, path, batch_size, seed, shuffle, img_size):
     
     while True:
         X1i = gen_img.next()
-        X2i = gen_gender.next()
+        X2i = gen_sex.next()
         yield [X1i[0], X2i[1]], X1i[1]
