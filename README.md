@@ -117,13 +117,12 @@ Bone age is an important clinical tool that has been in existence for >75 years 
 
 ## References
 
-1. Data sources:https://www.rsna.org/education/ai-resources-and-training/ai-image-challenge/RSNA-Pediatric-Bone-Age-Challenge-2017https://stanfordmedicine.app.box.com/s/4r1zwio6z6lrzk7zw3fro7ql5mnoupcv/folder/42459416739https://www.kaggle.com/kmader/rsna-bone-age
-2. Chollet, F. https://github.com/fchollet/deep-learning-with-python-notebooks/blob/master/5.3-using-a-pretrained-convnet.ipynb. [Accessed Dec 2020].
-3. Creo AL, Schwenk WF. Bone age: a handy tool for pediatric providers. *Pediatrics*. 2017;140(6):e20171486.
-4. F. Chollet, "Xception: Deep Learning with Depthwise Separable Convolutions," *2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)*, Honolulu, HI, 2017, pp. 1800-1807, doi: 10.1109/CVPR.2017.195.
-5. H. Fukui, T. Hirakawa, T. Yamashita and H. Fujiyoshi, "Attention Branch Network: Learning of Attention Mechanism for Visual Explanation," *2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)*, Long Beach, CA, USA, 2019, pp. 10697-10706, doi: 10.1109/CVPR.2019.01096.
-6. Halabi SS, Prevedello LM, Kalpathy-Cramer J, et al. The RSNA Pediatric Bone Age Machine Learning Challenge. Radiology 2018; 290(2):498-503.
-7. M. Cicero and A. Bilbily, “Machine Learning and the Future of Radiology: How we won the 2017 RSNA ML Challenge,” 16bit.ai, Nov. 23, 2017. [Online]. Available: https://www.16bit.ai/blog/ml-and-future-of-radiology. [Accessed Dec 2020]
-8. In order to implement the attention mechanism and augment data appropriately with multiple inputs, code was adapted from the following sources:
+1. Chollet, F. https://github.com/fchollet/deep-learning-with-python-notebooks/blob/master/5.3-using-a-pretrained-convnet.ipynb. [Accessed Dec 2020].
+2. Creo AL, Schwenk WF. Bone age: a handy tool for pediatric providers. *Pediatrics*. 2017;140(6):e20171486.
+3. F. Chollet, "Xception: Deep Learning with Depthwise Separable Convolutions," *2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)*, Honolulu, HI, 2017, pp. 1800-1807, doi: 10.1109/CVPR.2017.195.
+4. H. Fukui, T. Hirakawa, T. Yamashita and H. Fujiyoshi, "Attention Branch Network: Learning of Attention Mechanism for Visual Explanation," *2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)*, Long Beach, CA, USA, 2019, pp. 10697-10706, doi: 10.1109/CVPR.2019.01096.
+5. Halabi SS, Prevedello LM, Kalpathy-Cramer J, et al. The RSNA Pediatric Bone Age Machine Learning Challenge. Radiology 2018; 290(2):498-503.
+6. M. Cicero and A. Bilbily, “Machine Learning and the Future of Radiology: How we won the 2017 RSNA ML Challenge,” 16bit.ai, Nov. 23, 2017. [Online]. Available: https://www.16bit.ai/blog/ml-and-future-of-radiology. [Accessed Dec 2020]
+7. In order to implement the attention mechanism and augment data appropriately with multiple inputs, code was adapted from the following sources:
    1. Mader, KS. “Attention on Pretrained-VGG16 for Bone Age”.  https://www.kaggle.com/kmader/attention-on-pretrained-vgg16-for-bone-age. [Accessed Dec 2020].
    2. Ehrhorn, M. “KU BDA 2019 boneage project”. https://www.kaggle.com/ehrhorn2019/ku-bda-2019-boneage-project. [Accessed Dec 2020].
