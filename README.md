@@ -30,10 +30,13 @@ Accessed via:
 
 ## Process
 
-1. Data cleaning, exploratory data analysis
-2. Image pre-processing, including contrast enhancement and thresholding methods
-3. Data augmentation
-4. Modeling
+###### Data cleaning, exploratory data analysis
+
+###### Image pre-processing, including contrast enhancement and thresholding methods
+
+###### Data augmentation
+
+###### Modeling
 
 - Trained several different convolutional neural network-based models to attempt to determine which factors are salient in bone age prediction using this infrastructure
 - Transfer learning
@@ -45,12 +48,11 @@ Accessed via:
   - Baseline with sex as additional input
   - Attention mechanism: Xception --> sequential convolutional layers --> GAP --> fully connected layers
   - Attention mechanism + sex as additional input
-
 - Loss/error metric: mean absolute error in months (easily interpretable, less affected by outliers)
 - Comparison of models
   - MAE
   - Diagnostics: testing regression assumptoins, residuals analysis
-- Results analysis
+  - Results analysis
 
 
 
@@ -60,14 +62,13 @@ Accessed via:
 - Incorporating sex as a feature/additional input in the model improved performance for both the baseline and attention mechanism models.
 - Across all models, the MAE was higher for female images compared to male images and this discrepancy decreased in those models where sex was incorporated as a feature.
 - The attention mechanism as it was implemented in this project did not significantly improve performance of the baseline model but, when sex was also incorporated into the model as a feature, performance of the model improved significantly and more than when sex was incorporated as a feature alone.
-- MAE was higher for younger ages
+- MAE was higher for younger ages. This may have been due to the nature of the data, as there were fewer images available for younger patients. This distribution is likely reflective of practice and studies have shown that bone age interpretation via radiographs of the left hand and wrist are less accurate in children <36 months of age.
 
 
 
 ## Takeaways
 
-- Consider sex-related differences
-- Sex-related differences may be associated with regions of interest
+- Consider sex-related differences, which may be associated with regions of interest
 - Identifying regions of interest prior to or early on in the modeling process may improve performance
 - More refined attention mechanisms or image segmentation may be necessary to identify salient features
 - Consider age-related differences
