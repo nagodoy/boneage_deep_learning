@@ -30,13 +30,13 @@ Accessed via:
 
 ## Process
 
-###### Data cleaning, exploratory data analysis
+#### Data cleaning, exploratory data analysis
 
-###### Image pre-processing, including contrast enhancement and thresholding methods
+#### Image pre-processing, including contrast enhancement and thresholding methods
 
-###### Data augmentation
+#### Data augmentation
 
-###### Modeling
+#### Modeling
 
 - Trained several different convolutional neural network-based models to attempt to determine which factors are salient in bone age prediction using this infrastructure
 - Transfer learning
