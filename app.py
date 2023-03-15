@@ -8,7 +8,7 @@ from tensorflow.keras.preprocessing.image import load_img, img_to_array
 from keras.preprocessing.image import ImageDataGenerator
 from keras.applications.xception import preprocess_input
 import random
-import cv2
+import opencv-python as cv2
 
 # Sidebar: Navigation
 st.sidebar.header('Navigation')
